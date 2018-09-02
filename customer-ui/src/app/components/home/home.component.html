@@ -1,0 +1,17 @@
+<div class="container">
+  <form [formGroup]="customerform" (ngSubmit)="submitRegistration()" novalidate>
+    <div *ngIf="validMessage != ''">
+      <h3 class="has-info">{{validMessage}}</h3>
+    </div>
+    <div class="form-group">
+      <label>Nombre</label>
+      <input type="text" class="form-control" formControlName="nombre_completo" required autofocus/>
+    </div>
+    <div class="form-group">
+      <label>Rut</label>
+      <input type="text" class="form-control" formControlName="rut" required/>
+    </div>
+  
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+</div>

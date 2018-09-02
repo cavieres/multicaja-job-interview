@@ -1,0 +1,11 @@
+{
+  "/server": {
+    "target": "https://infinite-shore-99041.herokuapp.com",
+    "secure": false,
+    "changeOrigin": true,
+    "logLevel": "debug",
+    "pathRewrite": {
+      "^/server": ""
+    }
+  }
+}

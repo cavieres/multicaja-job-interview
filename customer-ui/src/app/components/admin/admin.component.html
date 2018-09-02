@@ -1,0 +1,24 @@
+<div class="container">
+  <table class="table table-bordered table-inverse">
+    <tr>
+      <th>Nombre</th>
+      <th>Rut</th>
+      <th>Creacion</th>
+      <th class="text-right">Actualizado</th>
+    </tr>
+    <tr *ngFor="let customer of customers">
+      <td>
+        <a [routerLink]="['/admin/view', customer.id]">{{customer.nombre_completo}}</a>
+      </td>
+      <td>
+        {{customer.rut}}
+      </td>
+      <td>
+        {{customer.createdAt}}
+      </td>
+      <td class="text-right">
+        {{customer.updatedAt}}
+      </td>
+    </tr>
+  </table>
+</div>
